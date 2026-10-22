@@ -32,10 +32,10 @@ footer img{height:44px;vertical-align:middle;margin-inline-end:8px}footer a{colo
    3. To add a whole new grade, add a line like {g:9,items:[]} to GRADES.
    Each activity file needs its own students.js next to it. Grade 5 and 6 activities read classes 5-x and 6-x. */
 const GRADES=[
- {g:5,items:[{icon:'🧩',t:'MakeCode Quest',d:'Learn algorithms and block coding with the robot Byte. 8 missions, quizzes and certificates.',url:'makecode-quest.html'}]},
- {g:6,items:[{icon:'📟',t:'Microbit Quest',d:'Build smart devices with the micro:bit: sensors, a servo motor and a smart gate. 8 missions, quizzes and certificates.',url:'microbit-quest.html'}]},
- {g:7,items:[]},
- {g:8,items:[{icon:'🤖',t:'Python Quest',d:'Learn Python step by step with the robot Byte. 7 missions, quizzes and certificates.',url:'python-quest.html'}]}
+ {g:5,items:[{icon:'🧩',t:'MakeCode Quest',d:'Learn algorithms and block coding with the robot Byte. 8 missions, quizzes and certificates.',url:'makecode-quest.html'},{icon:'🧠',t:'AI Baseline Practice',d:'Easy AI practice: 6 stages, 10 questions each. Get 7 or more to open the next stage, then earn your certificate.',url:'ai-baseline-practice-56.html'}]},
+ {g:6,items:[{icon:'📟',t:'Microbit Quest',d:'Build smart devices with the micro:bit: sensors, a servo motor and a smart gate. 8 missions, quizzes and certificates.',url:'microbit-quest.html'},{icon:'🧠',t:'AI Baseline Practice',d:'Easy AI practice: 6 stages, 10 questions each. Get 7 or more to open the next stage, then earn your certificate.',url:'ai-baseline-practice-56.html'}]},
+ {g:7,items:[{icon:'🧠',t:'AI Baseline Practice',d:'Practice AI in 6 stages of 10 questions. Score 7 or more to unlock the next stage, then earn your certificate.',url:'ai-baseline-practice.html'}]},
+ {g:8,items:[{icon:'🤖',t:'Python Quest',d:'Learn Python step by step with the robot Byte. 7 missions, quizzes and certificates.',url:'python-quest.html'},{icon:'🧠',t:'AI Baseline Practice',d:'Practice AI in 6 stages of 10 questions. Score 7 or more to unlock the next stage, then earn your certificate.',url:'ai-baseline-practice.html'}]}
 ];
 const esc=s=>String(s).replace(/[&<>"]/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c]));
 function render(){const A=document.getElementById('app'),m=location.hash.match(/^#g(\d)$/),G=m&&GRADES.find(x=>x.g==m[1]);
